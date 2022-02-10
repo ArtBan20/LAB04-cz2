@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+void conv(int nu){
+    if (nu>0){
+        conv(nu/2);
+        cout<<nu%2;}
+}
+int main(){
+    int n;
+    cout << "Podaj liczbe: ";
+    cin >> n;
+    cout << "Liczba binarna: "<<n<<": ";
+    conv(n);
+return 0;
+}
