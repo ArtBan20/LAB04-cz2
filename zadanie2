@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int k(int z, int x){
+    if (x!= 0)
+    return k(x, z % x);
+return z;
+}
+int main(){
+    int z, x;
+    cout << "Podaj 2 liczby: ";
+    cin >> z >> x;
+    cout << "Najwiekszy wspolny dzielnik tych liczb to "<< k(z, x);
+    return 0;
+}
